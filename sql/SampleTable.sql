@@ -1,0 +1,11 @@
+CREATE TABLE CauseError(
+    [CauseErrorId] [int] IDENTITY(1,1) NOT NULL,
+    [SomeText] [varchar](100) NULL 
+
+    CONSTRAINT [PK_Cause_Error] PRIMARY KEY CLUSTERED
+    (
+        [CauseErrorId] ASC
+    ) WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO

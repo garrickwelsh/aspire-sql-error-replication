@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="2.1.0-preview.1" />
+  <PropertyGroup>
+    <Name>Vds.SqlDatabase</Name>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+    <RootNamespace>Vds.SqlDatabase</RootNamespace>
+    <AssemblyName>Vds.SqlDatabase</AssemblyName>
+    <ProjectGuid>{84F43788-80E4-4F06-8024-BA6A05B0F753}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputPath>bin</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SqlServer.Dacpacs.Azure.Master" />
+  </ItemGroup>
+</Project>

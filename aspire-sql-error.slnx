@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/sql/">
+    <Project Path="sql/aspire-error.sqlproj" />
+  </Folder>
+  <Project Path="aspire-apphost-workaround/aspire-apphost-workaround.csproj" />
+  <Project Path="aspire-apphost/aspire-apphost.csproj" />
+  <Project Path="aspire-error/aspire-error.csproj" />
+  <Project Path="aspire-error-workaround/aspire-error-workaround.csproj" />
+</Solution>

@@ -1,0 +1,36 @@
+{
+  // "image": "ghcr.io/garrickwelsh/devcontainer-csharp-dfd-cmdline-tools:20250330.16.47.05",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "features": {
+  },
+  "remoteEnv": {
+    "PODMAN_USERNS": "keep-id"
+  },
+  "containerUser": "vscode",
+  "forwardPorts": [
+    14333,
+    17091,
+    7066,
+    14433,
+    17092,
+    7067
+    ],
+	"portsAttributes": {
+    "7066": {
+      "label": "Aspire host"
+    }
+	},
+	"otherPortsAttributes": {
+		"onAutoForward": "ignore"
+	},
+	"runArgs":  [
+    "--network=host",
+    "--name", "aspire-sql-error"
+  ],
+  "mounts": [
+    "source=/etc/timezone,target=/etc/timezone,type=bind,consistency=cached,ro"
+  ]
+}
